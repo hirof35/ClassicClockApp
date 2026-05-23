@@ -1,6 +1,7 @@
+
 Classic Sweep ClockJava Swingで実装された、クラシックな外観と滑らかな運針（スイープセコンド）が特徴のアナログ時計アプリケーションです。🌟 特徴スイープ運針: 1秒ごとに「カチッ」と動くのではなく、高級機械式時計のように秒針が滑らかに移動します（50ms周期の更新）。伝統的なデザイン: ローマ数字のインデックスと、アンチエイリアス処理を施した美しい文字盤を採用。高精度な計算: Calendar クラスのミリ秒成分を利用し、時・分・秒それぞれの針の角度を精密に計算・描画しています。ハイブリッド表示: アナログの情緒的な表示に加え、右下にはデジタルの日付と時刻を表示するインフォメーションパネルを備えています。🛠 技術的詳細レンダリング: Graphics2D と RenderingHints を使用し、ギザギザのない滑らかな線を描画しています。数理ロジック:秒針の角度: $preciseSecond \times 6^\circ$分針の角度: $(minute + \frac{second}{60}) \times 6^\circ$時針の角度: $(hour + \frac{minute}{60}) \times 30^\circ$これらの計算により、分針や時針も秒の経過に合わせてわずかに動く、リアルな挙動を実現しています。🚀 セットアップと実行特別なライブラリへの依存はありません。標準的なJava環境（JDK 8以上推奨）で動作します。Bash# クローン
 git clone https://github.com/your-username/classic-sweep-clock.git
-
+<img width="538" height="589" alt="スクリーンショット 2026-05-23 190018" src="https://github.com/user-attachments/assets/a15d13e0-67de-41ad-ae75-b4f75abcdc4f" />
 # コンパイル
 javac classicClock/ClassicClock.java
 
